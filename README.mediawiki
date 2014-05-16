@@ -1,0 +1,26 @@
+= Felica Cashing System =
+
+== About ==
+Felica Cashing System はフェリカを用いた電子決済システムで、2013年から高知工科大学ロボット倶楽部で使用されています。このシステムでは、事前カードにチャージして支払うか、ツケとして後払いすることができます。
+
+Felica Cashing System is the electronic clearing system using the Felica and is used by Kochi University of Technology Robot Club since 2013. The system can refill money your card in advance and pay, otherwise pay later as credit.
+
+このシステムはソニー製のフェリカリーダー「PaSoRi」をカードの読み取りに使用します。パソリは USB にて接続されており、C# から　P/Invoke を使って Win32 API (PC/SC) を呼び出して利用します。
+
+The system is used the Felica reader named PaSoRi made by Sony to read your card. PaSoRi is connected USB and it is invoked by Win32 API named PC/SC as P/Invoke from C#.  
+
+PaSoRi がカードを検出した場合、このシステムはすぐに決済ウィンドウを表示します。この時点で、キーボードとマウスを使って決済が可能です。このシステムはカードを読み込ませていない場合、使用出来ません。
+
+If PaSoRi detect your card, the system view the payment window soon. At this point you can pay used by keyboard and mouse. You can't use the system if the system doesn't read card.
+
+== Development environment ==
+* Visual Studio 2013
+* C# / .NET Framework 4.0.1 / WPF
+
+== License ==
+* The MIT License
+* Copyright &copy; 2013-2014 MIZUNE Pine.
+
+== Links ==
+* [http://www.ugs.kochi-tech.ac.jp/robot/ Robot Club Official Site]
+* [http://wikiwiki.jp/robotclub/ Robot Club Wiki]
