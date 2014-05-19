@@ -41,6 +41,7 @@
             this.textBoxMail = new System.Windows.Forms.TextBox();
             this.buttonOk = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonRename = new System.Windows.Forms.Button();
             this.panelDormitory.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,7 +135,7 @@
             // buttonOk
             // 
             this.buttonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOk.Location = new System.Drawing.Point(196, 181);
+            this.buttonOk.Location = new System.Drawing.Point(245, 181);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(75, 23);
             this.buttonOk.TabIndex = 7;
@@ -144,12 +145,22 @@
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(115, 181);
+            this.buttonCancel.Location = new System.Drawing.Point(164, 181);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 7;
             this.buttonCancel.Text = "キャンセル";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            // 
+            // buttonRename
+            // 
+            this.buttonRename.Location = new System.Drawing.Point(241, 8);
+            this.buttonRename.Name = "buttonRename";
+            this.buttonRename.Size = new System.Drawing.Size(75, 23);
+            this.buttonRename.TabIndex = 8;
+            this.buttonRename.Text = "名前変更";
+            this.buttonRename.UseVisualStyleBackColor = true;
+            this.buttonRename.Click += new System.EventHandler(this.buttonRename_Click);
             // 
             // ProfileForm
             // 
@@ -157,7 +168,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(295, 216);
+            this.ClientSize = new System.Drawing.Size(333, 216);
+            this.Controls.Add(this.buttonRename);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.textBoxMail);
@@ -191,5 +203,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button buttonOk;
         private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonRename;
     }
 }

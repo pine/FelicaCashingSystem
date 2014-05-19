@@ -303,14 +303,14 @@ namespace FelicaCashingSystem
 
         }
 
-        private void ShowChangeNameForm()
+        public string ShowChangeNameForm()
         {
             var rename = new RenameForm(this.db, this.user.Name);
             var dialog_result = this.ShowMultiThreadDialog(rename);
 
             if (dialog_result != DialogResult.OK)
             {
-                return;
+                return null;
             }
 
             if (this.db.Rename(this.user.Uid, rename.UserName))
@@ -319,11 +319,15 @@ namespace FelicaCashingSystem
 
                 this.user.Name = rename.UserName;
                 this.UpdateGUI();
+
+                return rename.UserName;
             }
 
             else
             {
                 MessageBox.Show("名前の変更に失敗しました。");
+
+                return null;
             }
         }
 

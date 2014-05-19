@@ -45,5 +45,20 @@ namespace FelicaCashingSystem
             this.User.RoomNo = this.textBoxRoomNo.Text;
             this.User.PhoneNumber = this.textBoxPhoneNumber.Text;
         }
+
+        private void buttonRename_Click(object sender, EventArgs e)
+        {
+            var form = this.Owner as MainForm;
+
+            if (form != null)
+            {
+                var name = form.ShowChangeNameForm();
+
+                if (name != null)
+                {
+                    this.textBoxName.Text = name;
+                }
+            }
+        }
     }
 }
