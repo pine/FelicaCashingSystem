@@ -542,6 +542,10 @@ namespace FelicaCashingSystem
                 {
                     conn.Open();
 
+                    // 不正なデータがあれば削除
+                    this.Delete(conn,
+                        "DELETE FROM bind WHERE child_uid = ?;", childUid);
+
                     var count = this.Insert(conn,
                         "INSERT INTO bind " +
                         "VALUES (?, ?);",
@@ -820,9 +824,9 @@ namespace FelicaCashingSystem
             return this.NonQuery(conn, query, args);
         }
 
-        private int Delete(SQLiteConnection conn, string query)
+        private int Delete(SQLiteConnection conn, string query, params object[] args)
         {
-            return this.NonQuery(conn, query);
+            return this.NonQuery(conn, query, args);
         }
 
         private SQLiteDataReader Select(
