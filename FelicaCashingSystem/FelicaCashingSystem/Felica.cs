@@ -124,6 +124,7 @@ namespace FelicaCashingSystem
         private const int    FeliCaUIDLength    = 29; // UID の長さ (16進数表記)
         
 
+
         private FelicaGetUidDelegate Callback      { get; set; }
         private IntPtr               Context       { get; set; }
         private string               ReaderName    { get; set; }
