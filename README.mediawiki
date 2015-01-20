@@ -1,21 +1,22 @@
 = Felica Cashing System =
 
 == About ==
-Felica Cashing System ‚ÍƒtƒFƒŠƒJ‚ğ—p‚¢‚½“dqŒˆÏƒVƒXƒeƒ€‚ÅA2013”N‚©‚ç‚’mH‰È‘åŠwƒƒ{ƒbƒg‹äŠy•”‚Åg—p‚³‚ê‚Ä‚¢‚Ü‚·B‚±‚ÌƒVƒXƒeƒ€‚Å‚ÍA–‘OƒJ[ƒh‚Éƒ`ƒƒ[ƒW‚µ‚Äx•¥‚¤‚©AƒcƒP‚Æ‚µ‚ÄŒã•¥‚¢‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+Felica Cashing System ã¯ãƒ•ã‚§ãƒªã‚«ã‚’ç”¨ã„ãŸé›»å­æ±ºæ¸ˆã‚·ã‚¹ãƒ†ãƒ ã§ã€2013å¹´ã‹ã‚‰é«˜çŸ¥å·¥ç§‘å¤§å­¦ãƒ­ãƒœãƒƒãƒˆå€¶æ¥½éƒ¨ã§ä½¿ç”¨ã•ã‚Œã¦ã„ã¾ã™ã€‚ã“ã®ã‚·ã‚¹ãƒ†ãƒ ã§ã¯ã€äº‹å‰ã‚«ãƒ¼ãƒ‰ã«ãƒãƒ£ãƒ¼ã‚¸ã—ã¦æ”¯æ‰•ã†ã‹ã€ãƒ„ã‚±ã¨ã—ã¦å¾Œæ‰•ã„ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
 Felica Cashing System is the electronic clearing system using the Felica and is used by Kochi University of Technology Robot Club since 2013. The system can refill money your card in advance and pay, otherwise pay later as credit.
 
-‚±‚ÌƒVƒXƒeƒ€‚Íƒ\ƒj[»‚ÌƒtƒFƒŠƒJƒŠ[ƒ_[uPaSoRiv‚ğƒJ[ƒh‚Ì“Ç‚İæ‚è‚Ég—p‚µ‚Ü‚·Bƒpƒ\ƒŠ‚Í USB ‚É‚ÄÚ‘±‚³‚ê‚Ä‚¨‚èAC# ‚©‚ç@P/Invoke ‚ğg‚Á‚Ä Win32 API (PC/SC) ‚ğŒÄ‚Ño‚µ‚Ä—˜—p‚µ‚Ü‚·B
+ã“ã®ã‚·ã‚¹ãƒ†ãƒ ã¯ã‚½ãƒ‹ãƒ¼è£½ã®ãƒ•ã‚§ãƒªã‚«ãƒªãƒ¼ãƒ€ãƒ¼ã€ŒPaSoRiã€ã‚’ã‚«ãƒ¼ãƒ‰ã®èª­ã¿å–ã‚Šã«ä½¿ç”¨ã—ã¾ã™ã€‚ãƒ‘ã‚½ãƒªã¯ USB ã«ã¦æ¥ç¶šã•ã‚Œã¦ãŠã‚Šã€C# ã‹ã‚‰ã€€P/Invoke ã‚’ä½¿ã£ã¦ Win32 API (PC/SC) ã‚’å‘¼ã³å‡ºã—ã¦åˆ©ç”¨ã—ã¾ã™ã€‚
 
 The system is used the Felica reader named PaSoRi made by Sony to read your card. PaSoRi is connected USB and it is invoked by Win32 API named PC/SC as P/Invoke from C#.  
 
-PaSoRi ‚ªƒJ[ƒh‚ğŒŸo‚µ‚½ê‡A‚±‚ÌƒVƒXƒeƒ€‚Í‚·‚®‚ÉŒˆÏƒEƒBƒ“ƒhƒE‚ğ•\¦‚µ‚Ü‚·B‚±‚Ì“_‚ÅAƒL[ƒ{[ƒh‚Æƒ}ƒEƒX‚ğg‚Á‚ÄŒˆÏ‚ª‰Â”\‚Å‚·B‚±‚ÌƒVƒXƒeƒ€‚ÍƒJ[ƒh‚ğ“Ç‚İ‚Ü‚¹‚Ä‚¢‚È‚¢ê‡Ag—po—ˆ‚Ü‚¹‚ñB
+PaSoRi ãŒã‚«ãƒ¼ãƒ‰ã‚’æ¤œå‡ºã—ãŸå ´åˆã€ã“ã®ã‚·ã‚¹ãƒ†ãƒ ã¯ã™ãã«æ±ºæ¸ˆã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚ã“ã®æ™‚ç‚¹ã§ã€ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã¨ãƒã‚¦ã‚¹ã‚’ä½¿ã£ã¦æ±ºæ¸ˆãŒå¯èƒ½ã§ã™ã€‚ã“ã®ã‚·ã‚¹ãƒ†ãƒ ã¯ã‚«ãƒ¼ãƒ‰ã‚’èª­ã¿è¾¼ã¾ã›ã¦ã„ãªã„å ´åˆã€ä½¿ç”¨å‡ºæ¥ã¾ã›ã‚“ã€‚
 
 If PaSoRi detect your card, the system view the payment window soon. At this point you can pay used by keyboard and mouse. You can't use the system if the system doesn't read card.
 
 == Development environment ==
 * Visual Studio 2013
-* C# / .NET Framework 4.0.1 / WPF
+* C# / .NET Framework 4 / Windows Forms
+* SQLite
 
 == License ==
 * The MIT License
